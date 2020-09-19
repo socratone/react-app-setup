@@ -16,6 +16,10 @@ module.exports = {
     ],
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
+    // 개발 서버를 띄울 때 어느 경로에 있는 것을 불러올 것인지
+    contentBase: path.join(__dirname, 'public'),
+    // 개발 서버에서 번들된 js파일을 어느 경로에서 불러올 것인지
+    // 위와 같은 경로로 설정하면 충돌이 생기는 것 같다.
+    publicPath: '/dist/',
   },
 };
