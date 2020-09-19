@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'none',
-  entry: './src/index.js',
+  entry: './src/index.js', // import된 파일들도 불러온다.
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
