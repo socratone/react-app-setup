@@ -3,7 +3,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'none',
-  entry: './src/index.js', // index.js부터 시작해서 여기에 import된 모든 파일이 bundle.js에 담긴다.
+  entry: './src/index.js', // index.js부터 시작해서 여기에 import된 모든 파일들이 bundle.js에 담긴다.
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'), // dist 폴더에 build된다.
