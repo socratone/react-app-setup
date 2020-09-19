@@ -11,8 +11,15 @@ module.exports = {
     // 배열의 순서대로 적용된다.
     rules: [
       {
-        test: /\.js?$/, // js만 컴파일한다.
-        loader: 'babel-loader',
+        test: /\.js$/, // .js 확장자로 끝나는 파일만 babel-loader를 사용한다.
+        exclude: /node_modules/,
+        use: 'babel-loader',
+      },
+      {
+        test: /\.css$/,
+        // css-loader가 css를 가져온다.
+        // style-loader가 html head에 style 태그를 넣어준다.
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
