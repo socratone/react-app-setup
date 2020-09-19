@@ -29,8 +29,4 @@ module.exports = {
       filename: 'index.html', // output으로 설정한 bundle.js를 추가하고 dist/index.html 파일을 만든다.
     }),
   ],
-  devServer: {
-    // 개발 서버를 띄우면 dist/index.html을 열고 index.html에서 불러오는 bundle.js를 임시로 컴파일 해준다.
-    contentBase: path.join(__dirname, 'dist'), // dist의 index.html을 불러온다.
-  },
 };
