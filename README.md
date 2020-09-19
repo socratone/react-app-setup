@@ -17,3 +17,9 @@ npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader
 5. 웹팩을 빌드한다.
 
 npx webpack
+
+개발 서버 설정
+
+6. 개발 서버를 설치한다.
+
+npm i -D webpack-dev-server
